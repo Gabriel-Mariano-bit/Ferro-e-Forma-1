@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadeira Industrial - Ferro e Forma</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .logo h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .produto-detalhes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+    }
+
+    .produto-detalhes img {
+      max-width: 100%;
+      width: 500px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .produto-info {
+      max-width: 600px;
+    }
+
+    .produto-info h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .produto-info p {
+      margin-bottom: 1rem;
+    }
+
+    .produto-info h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .produto-info ul {
+      padding-left: 1.2rem;
+    }
+
+    .produto-info ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .form-section {
+      background-color: #f4f4f4;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .form-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-section p {
+      margin-bottom: 2rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .produto-detalhes {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .produto-info {
+        max-width: 100%;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <ul class="nav-left">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+      </ul>
+      <div class="logo">
+        <h1>Ferro e Forma</h1>
+      </div>
+      <ul class="nav-right">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Detalhes do Produto -->
+  <section class="produto-detalhes">
+    <img src="img/Cadeira.png" alt="Cadeira Industrial" />
+    <div class="produto-info">
+      <h2>Cadeira Industrial</h2>
+      <p>Combinando conforto e estilo industrial, nossa cadeira é perfeita para escritórios, salas de jantar ou ambientes criativos. Produzida com estrutura metálica e assento ergonômico em madeira ou estofado.</p>
+      <h3>Características:</h3>
+      <ul>
+        <li>Estrutura em aço carbono com pintura preta fosca</li>
+        <li>Assento disponível em madeira natural ou estofado</li>
+        <li>Design robusto e elegante</li>
+        <li>Altura: 85cm | Assento: 45cm</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formulário de Encomenda -->
+  <section class="form-section">
+    <h3>Encomende Agora!</h3>
+    <p>Entre em contato para mais informações ou para fazer sua encomenda personalizada.</p>
+    <form action="#" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="mensagem" placeholder="Sua mensagem ou pedido" required></textarea>
+      <button type="submit">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ferro e Forma | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
